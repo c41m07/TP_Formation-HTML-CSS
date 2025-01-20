@@ -1,27 +1,99 @@
-*{
+* {
     list-style: none;
-    margin:0;
-    padding:0;
+    margin: 5px;
+    padding:2px;
+    font-family: 'Roboto', sans-serif;
 }
-header{
+
+header {
+    position: relative;
     width: 100%;
     display: flex;
 }
-.image{
+
+.image {
     width: 30%;
 }
-nav{
+
+nav {
+    position: absolute;
+    left: 30%;    
     width: 70%;
 }
-ul{
+
+ul {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    height: 100%;
+    height: auto;
 }
 
-#Diplome{
+#Presentation {
     width: 100%;
-    height: 20%;
-    border: 2px solid red;
+    height: auto;
+
+}
+
+#Diplome {
+    width: 100%;
+    height: auto;
+}
+
+h2 {
+    text-align: center;
+}
+
+#Xp {
+    width: 100%;
+    height: auto;
+}
+
+#Comp {
+    width: 100%;
+    height: auto;
+}
+
+#Langage {
+    width: 100%;
+    height: auto;
+}
+
+#Permis {
+    width: 100%;
+    height: auto;
+}
+
+#Inté {
+    width: 100%;
+    height: auto;
+}
+
+.maingrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.right {
+    width: 100%;
+    height: auto;
+}
+
+.left {
+    border-right: 2px solid blue;
+    margin-right: 5px;
+    width: 100%;
+    height: auto;
+}
+
+.barrette {
+    padding-top: 10%;
+}
+
+.barrette::before {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 4px;
+    background-color: blue;   
 }
