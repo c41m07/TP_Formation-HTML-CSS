@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<!-------- HEADER OBLIGATOIRE POUR LE REFERENCMENT -------->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="mon premier site HTML">
+    <meta name="keywords" content="HTML, CSS, JS">
+    <meta name="author" content="Kévin">
+    <meta name="robots" content="index, follow">
+    <link rel="stylesheet" href="/asset/css/style.css">
+    <title>mon premier site HTML</title>    
+</head>
+<body>
+    <!-------- en tête --------><!-- BALISE PRINCIPAL -->
+    <header>
+        <!-------- navigation --------><!-- BALISE PRINCIPAL -->
+        <nav>
+            <ul>
+                <li><a href="pge/home.html">HOME</a></li>
+                <li><a href="pge/CV.html">CV</a></li>
+                <li>ABOUT</li>
+                <li>CONTACT</li>
+            </ul>
+        </nav>
+    </header>
+    <!-------- contenue principal --------><!-- BALISE PRINCIPAL -->
+    <main>
+
+        <!-------- textes -------->
+        <h1>TITRE 1</h1>
+        <h2>TITRE 2</h2>
+        <h3>TITRE 3</h3>
+        <h4>TITRE 4</h4>
+        <h5>TITRE 5</h5>
+        <h6>TITRE 6</h6>
+
+        <p class="mon_texte">PARAGRAPHE 1</p>
+        <strong class="mon_texte">texte important</strong>
+        <em>texte emphatique</em>
+        <mark>texte surligné</mark>
+        <blockquote>citation</blockquote>
+        <pre>texte préformaté</pre>
+        <code>code info</code>
+
+        <!-------- médias et liens -------->
+        <a href="url"></a> <!-- lien hypertext -->
+        <img src="image.jpg" alt="image église"> <!-- images -->
+        <video src="video.mp4"></video> <!-- video -->
+        <audio src="audio.mp3"></audio> <!-- audio -->
+        <iframe src="url" frameborder="0"></iframe> <!-- carte ou contenue embarqué -->
+
+        <!-------- listes -------->
+        <ul>
+            <li>élément non ordonné</li>
+            <li>élément non ordonné</li>
+            <li>élément non ordonné</li>
+            <li>élément non ordonné</li>
+        </ul>
+        <ol>
+            <li>élément ordonné</li>
+            <li>élément ordonné</li>
+            <li>élément ordonné</li>
+            <li>élément ordonné</li>
+        </ol>
+        <dl>
+            <dt>terme 1</dt>
+            <dd>définition 1</dd>
+            <dt>terme 2</dt>
+            <dd>définition 2</dd>
+            <dt>terme 3</dt>
+            <dd>définition 3</dd>
+            <dt>terme 4</dt>
+            <dd>définition 4</dd>
+        </dl>
+        
+        <!-------- formulaires -------->
+        <form action="" method="post">
+
+            <label for="name"id="name">nom</label>
+            <input type="text" id="text" required></input>
+
+            <input type="email" id="email" required></input>
+            <input type="password" id="password" required></input>
+            <input type="number" min="0" max="100"></input>
+            <input type="date"></input>
+            <input type="file"></input>
+            <input type="checkbox"></input>
+            <input type="radio"></input>
+
+            <select name="" id="">
+                <option value="">option 1</option>
+                <option value="">option 2</option>
+                <option value="">option 3</option>
+            </select>
+
+            <textarea rows="4" cols="50"></textarea>
+
+            <button type="submit">Envoyer</button>
+
+
+        </form>
+
+        <!-------- tableau -------->
+        <table>
+            <thead>
+                <tr>
+                    <th>en tête 1</th>
+                    <th>en tête 2</th>
+                    <th>en tête 3</th>
+                </tr>
+                               
+            </thead>
+            <tbody>
+                <tr>
+                    <td>ligne 1</td>
+                    <td>ligne 2</td>
+                    <td>ligne 3</td>
+                    <td>ligne 4</td>
+                </tr>
+                
+            </tbody>
+        </table>
+
+
+    </main>
+
+    <!-------- contenue annexe --------><!-- BALISE PRINCIPAL -->    
+    <aside>
+un contenue annexe
+    </aside>
+
+    <!-------- contenue autonome --------><!-- BALISE PRINCIPAL -->
+    <article>
+un article
+    </article>
+    
+    <!-------- partie de la page --------><!-- BALISE PRINCIPAL -->
+    <section>
+une section
+    </section>
+
+    <!-------- pied de page --------><!-- BALISE PRINCIPAL -->
+    <footer>
+pied de page
+    </footer>
+</body>
+</html>
