@@ -4,7 +4,8 @@
     margin: 0; /* Supprime les marges par défaut */
     padding: 0; /* Supprime les paddings par défaut */
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /* Choix de la police */
-    box-sizing: border-box; /* Inclut padding et bordures dans les dimensions des éléments */ 
+    box-sizing: border-box; /* Inclut padding et bordures dans les dimensions des éléments */
+ 
 }
 
 /* Style global du corps de la page */
