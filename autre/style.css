@@ -1,0 +1,181 @@
+/* Réinitialisation des marges et des paddings par défaut pour tous les éléments */
+* {
+    list-style: none; /* Supprime les puces des listes */
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /* Choix de la police */
+    box-sizing: border-box; /* Inclut padding et bordures dans les dimensions des éléments */
+}
+
+/* Style global du corps de la page */
+body {
+    background-color: white; /* Fond blanc pour la page */
+    max-width: 900px; /* Limite la largeur maximale de la page */
+    margin: 0 auto; /* Centre le contenu horizontalement */
+    color: black; /* Texte en noir */
+    line-height: 1.6; /* Espacement entre les lignes pour une meilleure lisibilité */
+    padding: 10px; /* Ajout de padding pour éviter que le texte touche les bords */
+}
+
+/* En-tête de la page */
+header {
+    width: 100%;
+    display: flex; /* Dispose les enfants horizontalement */
+    justify-content: center; /* Centre les enfants horizontalement */
+    padding: 10px 0;
+    background-color: #f4f4f4; /* Fond gris clair */
+    border-bottom: 2px solid #ddd; /* Bordure en bas de l'en-tête */
+}
+
+/* Style des liens dans le menu */
+header ul {
+    display: flex;
+    gap: 20px; /* Espacement entre les éléments du menu */
+    flex-wrap: wrap; /* Permet au menu de passer à la ligne sur petits écrans */
+}
+
+header ul li a {
+    text-decoration: none; /* Supprime le soulignement des liens */
+    color: black; /* Couleur noire pour les liens */
+    font-weight: bold; /* Texte en gras */
+    transition: color 0.3s; /* Animation douce sur la couleur */
+}
+
+header ul li a:hover {
+    color: red; /* Couleur rouge au survol */
+}
+
+/* Style pour l'image de profil */
+.image {
+    width: 180px; /* Largeur de l'image */
+    height: 180px; /* Hauteur de l'image */
+    border-radius: 50%; /* Rend l'image ronde */
+    object-fit: cover; /* Coupe l'image pour qu'elle s'adapte */
+    border: 3px solid red; /* Bordure rouge autour de l'image */
+}
+
+/* Centrage de l'image de profil */
+.Photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+/* Styles pour les titres */
+h2, h4, h5 {
+    color: black; /* Texte en noir */
+}
+
+#Presentation h1, #Xp h2 {
+    text-align: center; /* Centre les titres principaux */
+    text-decoration: underline; /* Souligne les titres */
+}
+
+h4 {
+    margin: 10px 0 5px; /* Espacement autour des sous-titres */
+}
+
+h5 {
+    text-align: right; /* Aligne à droite */
+    font-style: italic; /* Texte en italique */
+    margin-bottom: 10px;
+}
+
+/* Grille principale qui divise la page */
+.maingrid {
+    display: grid;
+    grid-template-columns: 0.6fr 1fr; /* Deux colonnes : une petite (gauche) et une grande (droite) */
+    gap: 20px; /* Espacement entre les colonnes */
+}
+
+/* Grille secondaire pour certaines sections */
+.scdgrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Deux colonnes égales */
+    gap: 10px; /* Espacement entre les sections */
+}
+
+/* Style pour la colonne gauche */
+.left {
+    background-color: rgba(0, 0, 255, 0.2); /* Fond bleu clair transparent */
+    border-radius: 15px; /* Angles arrondis */
+    padding: 10px; /* Espacement interne */
+}
+
+/* Sections avec une petite barre rouge avant le contenu */
+.barrette {
+    margin: 20px 0; /* Espacement autour de la section */
+}
+
+.barrette::before {
+    content: ''; /* Crée un élément visuel sans texte */
+    display: block;
+    width: 50px; /* Largeur de la barre rouge */
+    height: 4px; /* Hauteur de la barre rouge */
+    background-color: rgba(255, 0, 0, 0.5); /* Rouge transparent */
+    margin-bottom: 10px; /* Espacement en dessous de la barre */
+}
+
+/* Listes avec des puces rondes */
+#Competences li, #Interets li {
+    list-style: circle; /* Utilise des cercles comme puces */
+    margin-left: 20px; /* Décalage des puces */
+}
+
+/* --- Media queries pour le responsive --- */
+
+/* Pour les tablettes (768px et plus) */
+@media (max-width: 768px) {
+    body {
+        max-width: 100%; /* Utilise toute la largeur de l'écran */
+        padding: 10px;
+    }
+
+    header ul {
+        flex-direction: column; /* Le menu passe à la verticale */
+        align-items: center;
+        gap: 10px;
+    }
+
+    .maingrid {
+        grid-template-columns: 1fr; /* Une seule colonne */
+    }
+
+    .scdgrid {
+        grid-template-columns: 1fr; /* Une seule colonne */
+    }
+
+    .image {
+        width: 150px; /* Réduit la taille de l'image */
+        height: 150px;
+    }
+}
+
+/* Pour les téléphones (480px et moins) */
+@media (max-width: 480px) {
+    header ul {
+        font-size: 14px; /* Réduit la taille des liens */
+    }
+
+    h1, h2 {
+        font-size: 18px; /* Réduit les titres principaux */
+    }
+
+    h4, h5, p {
+        font-size: 14px; /* Réduit les autres textes */
+    }
+
+    .image {
+        width: 120px; /* Réduit encore la taille de l'image */
+        height: 120px;
+    }
+
+    .maingrid, .scdgrid {
+        gap: 15px; /* Réduit l'espacement entre les sections */
+    }
+
+    .left {
+        padding: 5px; /* Réduit les marges internes */
+    }
+}

@@ -2,21 +2,26 @@
     list-style: none;
     margin: 10px;
     padding:2px;
-    font-family: 'Roboto', sans-serif;
-    color: white;
-    
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 body {
-    background-color: black;
+    background-color: white;
     max-width: 900px;
     margin: 0 auto;
+    color: black;
 }
 
 header {
-    position: relative;
     width: 100%;
     display: flex;
+}
+
+.titre {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .image {
@@ -25,19 +30,15 @@ header {
     border-radius: 50%;
     object-fit: cover;
     border: 3px solid red;
+    position: relative;
+    
+    
 }
 
-.titre {
-    width: 70%;
+.Photo {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-nav {
-    position: absolute;
-    left: 30%;    
-    width: 70%;
 }
 
 ul {
@@ -59,8 +60,12 @@ ul {
 }
 
 h2 {
-    text-align: center;
+    text-align: left;
     text-decoration: underline;
+}
+
+#Presentation h2, #Xp h2 {
+    text-align: center;
 }
 
 h4 {
@@ -73,10 +78,10 @@ h5 {
 }
 
 h2,h4,h5 {
-    color: yellow;
+    color: black;
 }
 
-#Xp,#Comp,#Langage,#Permis,#Inté {
+#Xp,#Presentation,#Langage,#Permis,#Inté,#Xp,#Diplome,#Comp {
     width: 100%;
     height: auto;
 }
@@ -87,10 +92,11 @@ h2,h4,h5 {
 
 .maingrid {
     display: grid;
-    grid-template-columns: 0.5fr 1fr;
+    grid-template-columns: 0.6fr 1fr;
     grid-template-rows: 1fr 1fr;
     
 }
+
 .scdgrid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -99,17 +105,16 @@ h2,h4,h5 {
 }
 
 .right {
-    border-left: 2px solid blue;
-    margin-left: 5px;
     width: 100%;
     height: auto;
 }
 
 .left {
-    border-right: 2px solid blue;
     margin-right:5px;
     width: 100%;
     height: auto;
+    background-color: rgba(0, 0, 255, 0.2);
+    border-radius: 15px;
 }
 
 .barrette {
@@ -121,5 +126,5 @@ h2,h4,h5 {
     display: block;
     width: 50px;
     height: 4px;
-    background-color: red;   
+    background-color: rgba(255, 0, 0, 0.5);   
 }
