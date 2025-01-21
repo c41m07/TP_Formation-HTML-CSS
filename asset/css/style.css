@@ -1,8 +1,16 @@
 * {
     list-style: none;
-    margin: 5px;
+    margin: 10px;
     padding:2px;
     font-family: 'Roboto', sans-serif;
+    color: white;
+    
+}
+
+body {
+    background-color: black;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
 header {
@@ -12,7 +20,18 @@ header {
 }
 
 .image {
-    width: 30%;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid red;
+}
+
+.titre {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 nav {
@@ -41,53 +60,60 @@ ul {
 
 h2 {
     text-align: center;
+    text-decoration: underline;
 }
 
-#Xp {
+h4 {
+    text-align: left;
+}
+
+h5 {
+    text-align: right;
+    font-style: italic;
+}
+
+h2,h4,h5 {
+    color: yellow;
+}
+
+#Xp,#Comp,#Langage,#Permis,#Inté {
     width: 100%;
     height: auto;
 }
 
-#Comp {
-    width: 100%;
-    height: auto;
-}
-
-#Langage {
-    width: 100%;
-    height: auto;
-}
-
-#Permis {
-    width: 100%;
-    height: auto;
-}
-
-#Inté {
-    width: 100%;
-    height: auto;
+#Comp li,#Inté li {
+    list-style: circle;  
 }
 
 .maingrid {
     display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    
+}
+.scdgrid {
+    display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+    
 }
 
 .right {
+    border-left: 2px solid blue;
+    margin-left: 5px;
     width: 100%;
     height: auto;
 }
 
 .left {
     border-right: 2px solid blue;
-    margin-right: 5px;
+    margin-right:5px;
     width: 100%;
     height: auto;
 }
 
 .barrette {
-    padding-top: 10%;
+    padding-top: 20%;
 }
 
 .barrette::before {
@@ -95,5 +121,5 @@ h2 {
     display: block;
     width: 50px;
     height: 4px;
-    background-color: blue;   
+    background-color: red;   
 }
