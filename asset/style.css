@@ -1,0 +1,151 @@
+/* --- Réinitialisation globale --- */
+* {
+    list-style: none; /* Supprime les puces des listes */
+    margin: 0; /* Supprime les marges par défaut */
+    padding: 0; /* Supprime les paddings par défaut */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /* Choix de la police */
+    box-sizing: border-box; /* Inclut padding et bordures dans les dimensions des éléments */
+}
+
+/* --- Variables CSS --- */
+:root {
+    --background-color: 20, 24, 28; /* Couleur de fond principale sombre */
+    --background-color2: 30, 34, 40; /* Couleur de fond secondaire sombre */
+
+    --interactive-color1: 50, 58, 70; /* Couleur interactive composant (sombre 3) */
+    --interactive-color2: 60, 70, 84; /* Couleur interactive composant (sombre 4) */
+    --interactive-color3: 80, 92, 108; /* Couleur interactive composant (sombre 5) */
+
+    --border-color1: 100, 112, 128; /* Bordures et séparateurs (sombre 6) */
+    --border-color2: 120, 140, 160; /* Bordures et séparateurs (sombre 7) */
+    --border-color3: 150, 170, 190; /* Bordures et séparateurs (sombre 8) */
+
+    --solid-color1: 0, 120, 220; /* Couleur solide principale (bleu foncé 9) */
+    --solid-color2: 0, 100, 200; /* Couleur solide secondaire (bleu foncé 10) */
+
+    --accessible-text-color1: 0, 180, 255; /* Texte accessible lumineux (11) */
+    --accessible-text-color2: 200, 220, 240; /* Texte accessible secondaire clair (12) */
+}
+
+/* Style général */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: rgb(var(--background-color));
+    color: rgb(var(--accessible-text-color2));
+    line-height: 1.6;
+}
+
+/* En-tête */
+header {
+    padding: 2rem 1rem;
+    border-bottom: 1px solid rgb(var(--border-color1));
+}
+
+header h1 {
+    color: rgb(var(--accessible-text-color1));
+    font-size: 2.5rem;
+    text-align: left;
+}
+
+header nav {
+    margin-top: 1rem;
+    text-align: right;
+}
+
+header nav a {
+    margin: 0 1rem;
+    color: rgb(var(--solid-color1));
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+nav a:hover {
+    color: rgb(var(--solid-color2));
+}
+
+/* Sections */
+section {
+    padding: 2rem 1rem;
+    text-align: center;
+    background-color: rgb(var(--background-color2));
+}
+
+section h2 {
+    color: rgb(var(--accessible-text-color1));
+    margin-bottom: 1rem;
+}
+
+section p {
+    max-width: 600px;
+    margin: 0 auto 1.5rem auto;
+}
+
+.presentation img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.projet img {
+    width: 300px;
+    height: 150px; 
+    object-fit: cover;
+    border-radius: 5px; 
+    margin-bottom: 1rem;
+}
+
+section a {
+    margin: 0 1rem;
+    color: rgb(var(--solid-color1));
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+/* Boutons */
+button {
+    background-color: rgb(var(--solid-color1));
+    color: rgb(var(--accessible-text-color2));
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 5px;
+    margin: 0.5rem;
+}
+
+button a {
+    text-decoration: none;
+    color: rgb(var(--accessible-text-color2));
+}
+
+button:hover {
+    background-color: rgb(var(--solid-color2));
+}
+
+/* Section Contact */
+.social a {
+    display: inline-block;
+    margin: 0.5rem;
+}
+
+.social svg {
+    width: 40px;
+    height: 40px;
+    fill: rgb(var(--solid-color1));
+    transition: fill 0.3s;
+}
+
+.social svg:hover {
+    fill: rgb(var(--solid-color2));
+}
+
+/* Pied de page */
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: rgb(var(--background-color2));
+    color: rgb(var(--accessible-text-color2));
+}
