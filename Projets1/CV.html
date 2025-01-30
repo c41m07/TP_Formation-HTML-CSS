@@ -8,13 +8,14 @@
     <meta name="keywords" content="CV, compétences, expérience, Kévin"> <!-- Mots-clés pour le référencement -->
     <meta name="author" content="Kévin"> <!-- Auteur -->
     <meta name="robots" content="index, follow"> <!-- Instructions pour les moteurs de recherche -->
-    <link rel="stylesheet" href="/Projets1/asset/css/stylecv.css"> <!-- Lien vers le fichier CSS -->
+    <link rel="stylesheet" href="/asset/stylecv.css"> <!-- Lien vers le fichier CSS -->
     <title>CV de Kévin</title> <!-- Titre de la page -->
 </head>
 
 <body class="nobody">
     <!-- Bannière principale de la page -->
     <section class="core">
+        <!-- En-tête -->
         <div class="header">
             <nav>
                 <ul>
@@ -34,7 +35,7 @@
                 <aside class="left">
                     <!-- Photo de profil -->
                     <section class="Photo">
-                        <img src="/Projets1/asset/img/moi.webp" alt="Photo de Kévin" class="image">
+                        <img src="/asset/img/moi.webp" alt="Photo de Kévin" class="image">
                     </section>
 
                     <!-- Présentation -->
@@ -76,8 +77,8 @@
                     </section>
                     
                     <!-- bouton télécharger CV en PDF -->
-                    <section>
-                        <button id="Bdownload">
+                    <section id="Bdownload">
+                        <button>
                             <a href="/Projets1/pge/CV.html">Télécharger le CV</a>
                         </button>
                     </section>
@@ -164,14 +165,15 @@
                         </section>
 
                         <!-- bouton contact par mail -->
-                        <section>
+                        <section class="barrette slide" id="contact">
                             <h1>
-                                Intéresser? envie de le contacter? 
+                                Intéresser? envie de me contacter? 
                                 <br> 
                                 Envoyé un email à Kévin
                             </h1>
                             <label for="emailUtilisateur">Votre email :</label>
                             <input type="email" id="emailUtilisateur" placeholder="Entrez votre email" required>
+                            <br>
                             <button onclick="envoyerEmail()">Envoyer le mail</button>
                         </section>
                     </div>
