@@ -28,7 +28,7 @@ body {
     color: rgb(var(--text-color));
     line-height: 1.6;
     padding: 10px;
-    background-image: url('/asset/img/Bureau.webp');
+    background-image: url('/assets/img/Bureau.webp');
     background-attachment: fixed;
     background-size: 115%;
     background-position: right 10% top 50%;
